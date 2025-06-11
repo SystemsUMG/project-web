@@ -24,8 +24,8 @@ export default function ConfirmPassword() {
 
     return (
         <AuthLayout
-            title="Confirm your password"
-            description="This is a secure area of the application. Please confirm your password before continuing."
+            title="Confirma tu contraseña"
+            description="Esta es un área segura de la aplicación. Confirme su contraseña antes de continuar."
         >
             <Head title="Confirm password" />
 
@@ -37,7 +37,7 @@ export default function ConfirmPassword() {
                             id="password"
                             type="password"
                             name="password"
-                            placeholder="Password"
+                            placeholder="Contraseña"
                             autoComplete="current-password"
                             value={data.password}
                             autoFocus
@@ -50,7 +50,7 @@ export default function ConfirmPassword() {
                     <div className="flex items-center">
                         <Button className="w-full" disabled={processing}>
                             {processing && <LoaderCircle className="h-4 w-4 animate-spin" />}
-                            Confirm password
+                            Confirmar Contraseña
                         </Button>
                     </div>
                 </div>
